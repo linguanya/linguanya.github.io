@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闽音南韵：闽南语学习网</title>
+</head>
+<style>
+    /* 盒子1的样式 */
+    .box1{
+		float:left;
+		display: inline;
+		position: relative;
+		left:-5px;
+		width:750px;
+		height:480px;
+		/* 超出的位置将隐藏并且不占位 */
+		overflow: hidden;  
+    }
+    .box{
+		float:left;
+		display: inline;
+		position: relative;
+		left:-5px;
+        width: 3000px;
+        height: 480px;
+        animation: move 10s infinite;
+    }
+    @keyframes move {
+       0%{
+           transform: translateX(0);
+       }
+       30%{
+           transform: translateX(-750px);
+       }
+       60%{
+           transform: translateX(-1500px);
+       }
+       100%{
+           transform: translateX(-2250px);
+       }
+    }
+    .box img{
+     float: left;
+     height: 480px;
+     width: 750px;
+    }
+	
+	.boxright{
+		background-color: antiquewhite;
+		float:right;
+		display: inline;
+		position: relative;
+	    width: 491px;
+	    height: 480px;
+	}
+	
+	.boxleft{
+		background-color: #ead193;
+		position: relative;
+	    width: 491px;
+	    height: 250px;
+	}
+	
+	.btn-group button
+	{
+		border: none;
+		float: left;
+		//border: 1px solid #5f271d;
+		//object-fit: contain;
+		background-color: #91817b; 
+		color: white;
+		padding: 15px 77.33px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 26px;
+		font-family:STKaiti;
+		cursor: pointer;//手型指针型切换
+		
+		-webkit-transition-duration: 0.4s; /* Safari */
+		    transition-duration: 0.4s;
+	}
+	.btn-group button:hover 
+	{
+	    background-color: #5f271d; /* Green */
+	    color: white;
+	}
+	.btn-group:after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	.btn-group button:not(:last-child) {
+	  border-right: none; /* 防止边框重叠 */
+	}
+	
+	/*设置链接*/
+	a:link {font-size: 30px;color:#5f271d;font-family: STKaiti;}    /* unvisited link */
+	a:visited {font-size: 30px;color:#5f271d;font-family: STKaiti;} /* visited link */
+	a:hover {color:#a81e32;}   /* mouse over link */
+	a:active {color:#a81e32;}  /* selected link */
+</style>
+<body>
+		
+		<div class="btn-group">
+		  <button>闽音南韵</button>
+		  <button>首页</button>
+		  <button>闽南语学习</button>
+		  <button>闽南语文化</button>
+		  <button>搜索</button>
+		</div>
+</body>
+<body>
+    <div class="box1">
+        <div class="box">
+            <img src='images/shouye.jpg' alt="">
+            <img src='images/惠安女.jpg' alt="">
+            <img src='images/闽南土楼1.jpg' alt="">
+        </div>
+    </div>
+	
+	<b><div class="boxright"><div style="color: #5f271d;font-size: 35px;font-family: STKaiti;text-align:center;">最新资讯</div></b>
+	<p><a href="https://sdxw.iqilu.com/share/YS0yMS0xMzczMTQ5Mw==.html" target="_blank">保护闽南语：让乡音活态传承</a></p>
+	<p><a href="https://mp.weixin.qq.com/s?__biz=MzU4OTAwMzU4Ng==&mid=2247508684&idx=2&sn=48ca801a5370474763ef417412732a24&chksm=fdd6cce1caa145f7cf8f0028fcfeb9b82f0779433bbbb346f9e10e38080552fbfd95b4171c7f&scene=27" target="_blank">【侨务资讯】“活化”闽南语：留住乡音，唤起乡情</a></p>
+	<br>
+	<b><div class="boxleft"><div style="color: #5f271d;font-size: 35px;font-family: STKaiti;text-align:center;">热门文章</div></b>
+	<p><a href="https://www.sohu.com/a/612783392_121124385" target="_blank">【教你学闽南话】世间万物皆有名，本期推出物名话，快来学吧！</a></p>
+</body>
+</html>
